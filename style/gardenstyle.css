@@ -1,0 +1,120 @@
+:root {
+  /* do not ask questions you
+  do not seek the answers to. */
+  /* --brown: #8c4219; */
+  /* --brown: #6e1d1d; */
+  --cream: #f1ece7;
+  --green: #697660;
+}
+
+* {
+  color: var(--green);
+  /* google please work, i hate Tahoma :( */
+  font-family: Averia Serif Libre, Tahoma;
+}
+
+body {
+  background-color: var(--cream);
+}
+
+/*
+  header styling
+                */
+header > div {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0,55,0,.1);
+  margin-bottom: 10px;
+}
+
+header > div > span:nth-child(1) {
+  font-size: clamp(20px, 3em, 4vw);
+}
+
+header > div > span:nth-child(2) {
+  font-size: clamp(15px, 2em, 3vw);
+  justify-content: center;
+  margin-left: 10%;
+}
+
+/* Styling that controls the overall grid boxes*/
+.treelist {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+/* Styling within each of the tree description boxes */
+.treebox {
+  box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+  padding: 10px;
+  display: grid;
+  /* it took me way too long to realize that 1fr 2fr was the easy solution for what I wanted..*/
+  grid-template-columns: minmax(200px, 1fr) 2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "name alignment"
+  "photo discussion";
+  /* grid-gap: 10px; */
+  grid-column-gap: 40px;
+}
+
+.treetitle, .treealign {
+  align-self: baseline;
+  margin-bottom: 10px;
+  margin-top: 10px
+}
+
+.treetitle {
+  grid-area: "name";
+  font-size: min(4em, 4vw);
+}
+
+.treealign {
+  grid-area: "alignment";
+  text-align: right;
+  font-size: min(3em, 4vw);
+}
+
+.treebox > a {
+  grid-area: "photo";
+  align-self: center;
+}
+
+.treebox > a > img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 0px var(--green),
+  -5px -5px 0px var(--green);
+}
+
+.info {
+  align-self: top;
+  grid-area: "discussion";
+}
+
+@media (max-width: 1100px) {
+  .treebox {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "name"
+    "alignment"
+    "photo"
+    "discussion";
+    grid-gap: 10px;
+  }
+
+  .treetitle, .treealign, .treebox > a {
+    justify-self: center;
+  }
+
+  .treetitle {
+    font-size: clamp(35px, 4em, 7vw);
+    margin-bottom: -15px;
+  }
+
+  .tree-align {
+    font-size: clamp(30px, 3em, 6.5vw);
+  }
+}

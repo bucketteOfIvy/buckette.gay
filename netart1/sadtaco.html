@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>"A sad taco, as recreated in class from Victoria Bergquist's image"</title>
+</head>
+
+<style>
+
+  :root {
+    --bg: #71CEB8;
+    --shell: #FFCF70;
+    --dshell: #DBB260;
+    --black: #545454;
+    --meat: #754B35;
+    --salad: #2BBF74;
+    --tomato: #D65353;
+    --blue: #3AD3EA;
+  }
+
+  body{
+    background-color: var(--bg);
+  }
+
+  .frame {
+    background-color: rgba(0,0,0,.25);
+    height: 350px;
+    width: 350px;
+    border: 1px solid black;
+    /* these lines work to center the art 15% from the top of the body (parent of the frame div)
+        are are how the artist originally centered her shit                                    */
+    position: relative;
+    top: 15%;
+    margin: auto; */
+    /*
+          * this is prof. briz's approach,
+          * as he wanted it centered entirely
+     position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    */
+  }
+
+  .shell-copy, .shell {
+    position: absolute;
+    top:15%;
+    background: var(--shell);
+    border-radius: 50% 50% 1em 1em/100% 100% 1em 1em;
+    background-image: radial-gradient(--dshell 5%, transparent 0), radial-gradient(--dshell 5%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 17px 17px;
+  }
+
+  .shell {
+    height: 40%;
+    width: 70%;
+    left: 15%;
+  }
+
+  .meat {
+    background-color: rgba(0, 0, 0, 0);
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: 24%;
+    left: 20%
+  }
+
+  .mince {
+    background-color: var(--meat);
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .mince:nth-child(1) {
+    bottom: 0;
+    left: -15%;
+  }
+  .mince:nth-child(2) {
+    bottom: 20%;
+    left: -15%;
+  }
+  .mince:nth-child(3) {
+    top: 10%;
+    left: 0%;
+  }
+  .mince:nth-child(4) {
+    top: -5%;
+    left: 15%;
+  }
+  .mince:nth-child(5) {
+    top: 25%;
+    left: -5%;
+  }
+</style>
+
+<body>
+  <div class="frame">
+    <div class="shell">
+    </div>
+    <div class="meat">
+      <div class="mince"></div>
+      <div class="mince"></div>
+      <div class="mince"></div>
+      <div class="mince"></div>
+      <div class="mince"></div>
+    </div>
+  </div>
+</body>
