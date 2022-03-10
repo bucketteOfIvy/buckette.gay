@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>table-table-table-table</title>
+</head>
+
+<style>
+  .tab::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(120, 120, 120, .5);
+  z-index: -1;
+}
+</style>
+
+<!-- hello stranger! if you have wandered into this code, be warned: it is painful.  -->
+<!-- also, it was written with the stipulation that no css nor javascript is allowed -->
+<!-- (we're going to ignore the fact that style="background" type stuff is, uh, css  -->
+<!-- oh, also, table-table-table-table -->
+<table class="tab", style="background:grey">
+  <table style="background:pink">
+    <tr>
+      <td>
+        <table style="background:grey">
+          <tr>
+            <td>
+              <!-- the only disadvantage of this <pre> environment is it has to remain cursed for my formatting to remain lol -->
+              <pre style="font-family:monospace; color:sienna">
+   <b>/</b><span style="background:sienna">¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</span><b>/</b>
+  <b>/</b><span style="background:sienna; color:black">  -~<u><b>ASCI Table</b></u>~-   </span><b>/</b>│
+ <b>/</b><span style="background:sienna">‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗</span><b>/</b> │
+ │ │ in            │   │  <span style="color:pink">an act of aggression commited by a sacrosanct squirrel brained genderfuck-in-training</span>
+ │     an          │       <span style="color: pink">that ignites in flames if exposed to booth business school, saieh hall, or gasoline and fire</span>
+ │  html table     │   <span style="color:grey"> when you think about, basically anything is a pipe, if you let it be </span>
+      </pre>
+              <pre style="color:pink">
+<span style="font-size:3; font-color:rgb(255,204,255)"> this is a pipe </span>
+but ze can't see it until ze's done making it
+    also ze has the attention span of a <strike>squirrel</strike> "modern human", apparently <span style="font-size:8; color:rgb(131,131,131)">
+                                        although the strikethrough makes sense, given zir squirrel brain</span>
+      </pre>
+            </td>
+          </tr>
+        </table>
+        <p style="color:pink; font-family:"> the below table is the table in question. not the pipe featured above.</p>
+        <table cellspacing="0" cellpadding="0" style="background:lightpink; font-family:monospace; font-size:67">
+          <tr>
+            <!-- overline overtly ovoids oll oblems -->
+            <td>┌──<sub style="text-decoration:overline"><a style="text-decoration:overline" href="https://webkinz.com">send</a></sub>──┐</td>
+            <!-- there is no world in which this *doesn't* shift my text -->
+            <td>┌─<sub style="text-decoration:overline"><a style="text-decoration:overline" href="https://webkinz.com">help</a></sub>─┐</td>
+            <td>┌─<sub style="text-decoration:overline"><a style="text-decoration:overline" href="https://webkinz.com">here</a></sub>─┐</td>
+            <td>┌─<sub style="text-decoration:overline"><a style="text-decoration:overline" href="https://webkinz.com">i can</a></sub>─┐</td>
+            <td>┌─<sub style="text-decoration:overline"><a style="text-decoration:overline" href="https://webkinz.com">not </a></sub>─┐</td>
+            <td>┌──<sub style="text-decoration:overline"><a style="text-decoration:overline" href="https://webkinz.com">esca</a></sub>─┐</td>
+          </tr>
+          <tr>
+            <td>├──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://www.webkinz.com">pe t</a></sub>──┼</td>
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">his </a></sub>─┼</td>
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">webs</a></sub>─┼</td>
+            <!-- it is around this far into repeating the same styling while making a table table without seeing it that you pray to the goddess for CSS -->
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">ite.</a></sub>─┼</td>
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">it h</a></sub>─┼</td>
+            <td>───<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">aunt</a></sub>─┤</td>
+          </tr>
+          <tr>
+            <td>├──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">s my</a></sub>──┼</td>
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">chil</a></sub>─┼</td>
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">dhoo</a></sub>─┼</td>
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">d me</a></sub>─┼</td>
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">mori</a></sub>─┼</td>
+            <td>───<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">es. </a></sub>─┤</td>
+          </tr>
+          <tr>
+            <td>├──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">free</a></sub>──┼</td>
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">me f</a></sub>─┼</td>
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">rom </a></sub>─┼</td>
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">my f</a></sub>─┼</td>
+            <td>──<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com">ate,</a></sub>─┼</td>
+            <td>───<sub style="text-decoration:overline"><a style="font-color:black; text-decoration:overline" href="https://webkinz.com"> pls</a></sub>─┤</td>
+          </tr>
+          <tr>
+            <!-- this typo was noticed *after* I decided to "submit" my table. Hence, I cannot fix it, even though it would be so easy. -->
+            <td>─└───────┘</td>
+            <td>└──────┘</td>
+            <td>└──────┘</td>
+            <td>└──────┘</td>
+            <td>└──────┘</td>
+            <td>└────────┘</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <h2>
+              now that i have your <b><span style="color:maroon">attention</span></b> thanks to my <span style="color:goldenrod">miraculous
+                <!-- -ly broken --> table</span> in a <img src="https://user-images.githubusercontent.com/6240983/62036504-3ae81100-b1f2-11e9-8761-9146483e55d1.png" width="20" alt="table (note: this table is, in fact, just an image of a square wooden coffeetable)"> lets make the world more s<b>table
+                <!-- even i regret this pun. --> </b>
+            </h2>
+          </tr>
+          <tr>
+            <h3>
+              plant <span style="color:forest">trees</span> in your <span style="color:maroon; font-family:Impact">neighbor's modem</span> to connect them to the <a href="https://en.wikipedia.org/wiki/Mycorrhizal_network" style="color:green; background:black; font-family:monospace">network</a> today!
+              <!-- its still connected by wires -->
+            </h3>
+          </tr>
+          <tr>
+            <p style="font-size:7">
+              note: if they press charges that is entirely their fault, and i am not to blame.
+            </p>
+          </tr>
+          <tr>
+          <p style="font-size:5">
+            (does this website really feel like it was made by a lawyer?)
+            <!-- i sure hope it does. id like to imagine this is how lawyers think -->
+          </p>
+            <h4>
+              <a href="http://www.guerrillagardening.org/ggseedbombs.html">get your weapons of natural connection today
+                <img src="seedbombmodem.png" href="http://www.guerrillagardening.org/ggseedbombs.html" alt="clickable link showing where to put seed bombs, and advising readers to water them.">
+              </a>
+            </h4>
+          </tr>
+          </td>
+        </tr>
+      </table>
+    </table>
+</table>

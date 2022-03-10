@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: lightpink;
+}
+
+/* will this get used? even i know not. */
+@font-face {
+  font-family: OpenDyslexic;
+  font-weight: 50px;
+  src: url(fonts/OpenDyslexic-Regular.otf)
+}
+
+@font-face {
+  font-family: OpenDyslexic-Bold;
+  src: url(fonts/OpenDyslexic-Bold.otf)
+}
+
+section {
+  padding: 7vw 7vw 7vw 7vw;
+  height: 50%;
+  background-color: grey;
+  margin: auto;
+  justify-content: center;
+}
+
+.bubble {
+  float: left;
+  top: 30%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+
+  font-size: 40px;
+  background-color: white;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding-left: 50px;
+    background-color: pink;
+    z-index: 10;
+}
+
+.title {
+  display: flex;
+  padding: 1vw auto;
+  font-family: OpenDyslexic-Bold;
+  font-size: 2.25vw;
+  font-weight: bold;
+  color: rgba(100, 100, 100, 1);
+}
+
+.subtitle {
+  display: flex;
+  padding-left: 15px;
+  height: auto;
+  max-width: 80%;
+  width: 80%;
+  padding: 1vw;
+  font-size: 1.25vw;
+  font-family: OpenDyslexic;
+  font-weight: lighter;
+  font-style: italic;
+  color: rgba(100,100,100,1);
+}
+
+.homenav {
+  position: relative;
+  font-family: OpenDyslexic;
+  color: rgba(125,125,125,.8);
+  font-style: normal;
+  text-decoration: none;
+}
+
+.homenav {
+  font-size: 40px;
+}
+
+@keyframes animate-type {
+  0% {
+    font-size: 40px;
+  }
+  100% {
+    font-size: 75px;
+  }
+}
+
+.homenav:hover {
+  animation-name: animate-type;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+canvas {
+  border: 1px solid black;
+}
