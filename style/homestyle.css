@@ -1,136 +1,15 @@
 :root {
-  /* color scheme! */
-  --dark-red: #780000;
-  --red: #C1121F;
-  --cream: #FDF0D5;
-  --dark-blue: #003049;
-  --light-blue: #669BBC;
+  --scare-quotes-white: #FEFBFF;
 }
 
 * {
-  color: var(--cream);
-  /* please work google, i hate Tahoma */
-  font-family: Averia Gruesa Libre, Tahoma;
+  color: var(--scare-quotes-white);
+  font-family: Averia Greusa Libre, Tahoma;
 }
 
-/*
-  header styling
-                */
-header > div {
-  display: flex;
-  align-items: center;
-  background: var(--dark-red);
-}
-
-header > div > span:nth-child(1) {
-  font-size: 50px;
-}
-
-header > div > span:nth-child(2) {
-  font-size: 20px;
-  justify-content: center;
-  margin-left: 10%;
-}
-
-/*
-  big boi body styling
-                        */
-body {
-  background: var(--cream);
-}
-
-/* yes im calling them pillars. no you cannot stop me */
-.pillars {
-  min-height: 300px;
+body, html {
+  margin: 0;
+  width: 100%;
   height: 100%;
-  max-height: 800px;
-}
-
-.leftsidebar, .centralbar, .rightbar {
-  float: left;
-  width: 30%;
-  margin: 1.5%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-flow: column;
-}
-
-.leftsidebar, .rightbar {
-  background-color: var(--dark-red);
-}
-
-.centralbar {
-  background-color: var(--red);
-}
-
-.pillarhead, .pillarcontent {
-  display: flex;
-  justify-content: center;
-}
-
-.pillarhead {
-  font-size: 5vw;
-}
-
-.pillarhead::before, .pillarhead::after {
-  content: "~";
-}
-
-.pillarcontent {
-  font-size: 2vw;
-  font-family: Averia Serif Libre;
-  text-decoration: none;
-
-  margin: 5%;
-  width: 90%;
-  height: 5%;
-  box-shadow: 0px 0px 7.5px var(--dark-blue);
-}
-
-.pillarcontent:hover {
-  animation-name: ethereal-glow, ethereal-grow, ethereal-wooshwosh;
-  animation-duration: 1.5s, 1.5s, 6s;
-  animation-direction: alternate, alternate, alternate;
-  animation-iteration-count: infinite, infinite, infinite;
-}
-
-
-
-@keyframes ethereal-glow {
-  0% {
-    box-shadow: 0px 0px 7.5px var(--dark-blue);
-  }
-
-  100% {
-    box-shadow: 0px 0px 25px var(--light-blue);
-  }
-}
-
-@keyframes ethereal-grow {
-  0% {
-    transform: scale(1)
-  }
-
-  100% {
-    transform: scale(1.1)
-  }
-}
-
-@keyframes ethereal-wooshwosh {
-  0% {
-    border-radius: 91% 9% 92% 8% / 20% 72% 28% 80%;
-  }
-  25% {
-    border-radius: 34% 66% 26% 74% / 78% 32% 68% 22%;
-  }
-  50% {
-    border-radius: 64% 36% 79% 21% / 12% 32% 68% 88%;
-  }
-  75% {
-    border-radius: 94% 6% 44% 56% / 41% 84% 16% 59%;
-  }
-  100% {
-    border-radius: 25% 75% 33% 67% / 59% 80% 20% 41%;
-  }
+  overflow: hidden;
 }

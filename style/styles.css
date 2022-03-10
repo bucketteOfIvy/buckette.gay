@@ -100,3 +100,8 @@ section {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+
+canvas {
+  border: 1px solid black;
+}
