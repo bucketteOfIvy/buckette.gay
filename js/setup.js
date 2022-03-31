@@ -70,8 +70,6 @@ function animate () {
 animate()
 
 function resize () {
-  const cw = canvas.width
-  const ch = canvas.height
   for (let i = 0; i < splotches.length; i += 1) {
     splotches[i].x = splotches[i].px * window.innerWidth
     splotches[i].y = splotches[i].py * window.innerHeight
