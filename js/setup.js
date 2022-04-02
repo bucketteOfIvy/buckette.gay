@@ -20,6 +20,8 @@ function Splotch (x, y, r, color) {
   this.rate = Math.random() * Math.PI / 90
   this.t = Math.random() * 2 * Math.PI
   this.scale = Math.random() * 25
+  this.px = this.x / window.innerWidth
+  this.py = this.y / window.innerHeight
 
   // TODO: adjust this so that it *actually* hovers
   this.hover = () => {
@@ -66,3 +68,16 @@ function animate () {
   window.requestAnimationFrame(animate)
 }
 animate()
+
+function resize () {
+  for (let i = 0; i < splotches.length; i += 1) {
+    splotches[i].x = splotches[i].px * window.innerWidth
+    splotches[i].y = splotches[i].py * window.innerHeight
+  }
+  canvas.height = window.innerHeight
+  canvas.width = window.innerWidth
+  ctx.globalAlpha = 0.5
+}
+
+window.addEventListener('resize', resize)
+window.addEventListener('orientationchange', resize)
