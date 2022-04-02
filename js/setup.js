@@ -1,6 +1,6 @@
 const canvas = document.createElement('canvas')
-canvas.width = window.outerWidth
-canvas.height = window.outerHeight
+canvas.width = window.visualViewport.width
+canvas.height = window.visualViewport.height
 canvas.style.zindex = -10
 // canvas.style.webkitFilter = 'blur(3px)'
 // setup style
