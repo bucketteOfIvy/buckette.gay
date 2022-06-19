@@ -111,6 +111,7 @@ h5 {
 #sidebar-header {
   grid-row-start: 1;
   grid-row-end: 1;
+  margin-bottom: clamp(1%, 2vh, 5%);
 }
 
 #sidebar-main-content {
@@ -121,6 +122,11 @@ h5 {
 #sidebar-footer {
   grid-row-start: 3;
   grid-row-end: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-end;
 }
 
 #sidebar-byline {
@@ -129,6 +135,8 @@ h5 {
 
 #sidebar-twitter {
   float: right;
+  margin-bottom: 2.5%;
+  margin-top: -2.5%;
 }
 
 #tweet {
