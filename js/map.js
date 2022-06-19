@@ -24,7 +24,7 @@ var style = {
 //      hacky solution.
 // import the geojson layer via AJAX
 
-var buildings = new L.GeoJSON.AJAX('js/data/bathrooms.geojson',
+var buildings = L.GeoJSON.AJAX('js/data/bathrooms.geojson',
   {
     style: style,
     onEachFeature: function (feature, layer) {
