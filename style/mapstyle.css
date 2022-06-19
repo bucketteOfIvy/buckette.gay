@@ -1,0 +1,86 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: Averia Gruesa Libre, Tahoma;
+}
+
+h1, h2, h3, h5 {
+  text-align: center;
+}
+
+h2, h3, h5 {
+  margin: 0px;
+}
+
+h1 {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5%;
+
+  padding: 0px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#container {
+  height: 100%;
+  /* grid setup */
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+}
+#sidebar {
+  /* TODO finalize this color choice -- mb align with main site? */
+  background: rgba(247,	168, 184, .5);
+  grid-column-start: 1;
+  display: grid;
+  grid-template-rows: .25fr 2fr .25fr;
+  grid-row-gap: 0px;
+/*  justify-content: center; */
+}
+
+#sidebar > * {
+  padding-left: 5%;
+  padding-right: 5%;
+/*  background: rgba(241, 236, 231, .5); */
+}
+
+#sidebar-header {
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+#sidebar-main-content {
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+#sidebar-footer {
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+#sidebar-byline {
+  float: left;
+}
+
+#sidebar-twitter {
+  float: right;
+}
+
+#tweet {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  grid-column-start: 2;
+}
