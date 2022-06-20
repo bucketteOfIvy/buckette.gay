@@ -3,19 +3,30 @@
 // load in a basemap from OSM of Hyde Park at it's latitude and longitude
 var map = L.map('map').setView([41.7898, -87.5987], 16)
 
-L.tileLayer('https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', {
+var osm = L.tileLayer('https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', {
   maxZoom: 18,
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map)
-// L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
-//   maxZoom: 20,
-//   attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-// }).addTo(map)
+})
+var stadiaDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+  maxZoom: 20,
+  attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+})
+
+stadiaDark.addTo(map)
+
+var baseMaps = {
+  'Open Street Maps': osm,
+  'Stadia Dark': stadiaDark
+}
+
+L.control.layers(baseMaps).addTo(map)
 
 var style = {
-  fillColor: '#F7A8B8',
-  color: '#000000',
-  weight: 1,
+  color: 'rgba(85, 205, 252, 1)',
+  fillColor: 'rgba(85, 205, 252, .825)',
+  // fillColor: 'rgba(247, 168, 184, .25)',
+  // fillColor: '#FFFFFF',
+  weight: 2,
   opacity: 1,
   fillOpacity: 1
 }
